@@ -22,7 +22,24 @@ var data = [
   {
     "name": "Paris",
     "price" : "$9000"
-  }
+  },
+  {
+    "name": "Switzerland",
+    "price" : "$10000"
+  },
+  {
+    "name": "California",
+    "price" : "$15000"
+  },
+  {
+    "name": "Mumbai",
+    "price" : "$2000"
+  },
+  {
+    "name": "Japan",
+    "price" : "$12000"
+  },
+
 
 ];
 
