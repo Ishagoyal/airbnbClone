@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import data from './data.json';
+
+
 
 // const numbers = [1,2,3,4,5];
 
@@ -8,44 +11,46 @@ import './App.css';
 //    <li>{number}</li>
 //   );
 
-var data = [
+// var data = [
 
-  {
-    "name": "Las Vegas",
-    "price" : "$5000"
-  },
- {
-    "name": "London",
-    "price" : "$7000"
-  },
+//   {
+//     "name": "Las Vegas",
+//     "price" : "$5000"
+//   },
+//  {
+//     "name": "London",
+//     "price" : "$7000"
+//   },
 
-  {
-    "name": "Paris",
-    "price" : "$9000"
-  },
-  {
-    "name": "Switzerland",
-    "price" : "$10000"
-  },
-  {
-    "name": "California",
-    "price" : "$15000"
-  },
-  {
-    "name": "Mumbai",
-    "price" : "$2000"
-  },
-  {
-    "name": "Japan",
-    "price" : "$12000"
-  },
+//   {
+//     "name": "Paris",
+//     "price" : "$9000"
+//   },
+//   {
+//     "name": "Switzerland",
+//     "price" : "$10000"
+//   },
+//   {
+//     "name": "California",
+//     "price" : "$15000"
+//   },
+//   {
+//     "name": "Mumbai",
+//     "price" : "$2000"
+//   },
+//   {
+//     "name": "Japan",
+//     "price" : "$12000"
+//   },
 
 
-];
+// ];
+
 
 var rows = data.map((row) =>
   <div className="Display-items">
-   <li> {row.name} &nbsp; &nbsp;  {row.price}</li>
+   <li> {row.name} &nbsp; &nbsp;  {row.price}  <img src = {row.image}/></li>
+
    </div>
   );
 
@@ -67,7 +72,7 @@ class ListExample extends Component {
           Initial code for airbnb clone.
         </p>
         <div>
-        <li> Name &nbsp; &nbsp; Price </li>
+        <li> Name &nbsp; &nbsp; Price &nbsp; &nbsp; Picture </li>
         {rows}
         </div>
 
