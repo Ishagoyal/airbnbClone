@@ -49,7 +49,7 @@ import data from './data.json';
 
 var rows = data.map((row) =>
   <div className="Display-items">
-   <li> {row.name} &nbsp; &nbsp;  {row.price}  <img src = {row.image}/></li>
+   <li> {row.name} &nbsp; &nbsp;  {row.price} &nbsp; &nbsp; <img src = {row.image} height="50" width="50" alt="Thumbnail Image"/></li>
 
    </div>
   );
