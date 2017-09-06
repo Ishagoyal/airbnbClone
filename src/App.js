@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import {RenderList} from './home.js';
-import {rows} from './home.js';
-
+import Home from './home.js';
 
 class App extends Component {
     render(){
@@ -10,9 +8,9 @@ class App extends Component {
       <div className="App">
         <div className="App-header">
           <h2>Welcome!</h2>
-        </div>
-        <div>
-        {RenderList(rows)}
+          <div>
+            <Home />
+          </div> 
         </div>
       </div>
     );
